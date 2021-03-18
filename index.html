@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<title>Disappearing Ninja</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja1" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja2" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja3" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja4" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja5" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja6" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja7" />
+			<img src="ninja.png" alt="ninja" class="appear" id="ninja8" />
+		</div>
+		<div class="btn">
+			<button id="restore">Restore</button>
+		</div>
+
+		<script>
+			$(document).ready(function () {
+				$('#ninja1').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja2').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja3').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja4').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja5').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja6').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja7').click(function () {
+					$(this).hide(500);
+				});
+				$('#ninja8').click(function () {
+					$(this).hide(500);
+				});
+				$('#restore').click(function () {
+					$('.appear').show();
+				});
+			});
+		</script>
+	</body>
+</html>
